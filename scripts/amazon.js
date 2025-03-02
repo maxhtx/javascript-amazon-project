@@ -81,7 +81,15 @@ document.querySelectorAll(".js-add-to-cart")
               quantity: 1
             })};
 
-          console.log(cart);
+
+          //Calculate Total Quantity
+          let totalQuantity = 0;
+          cart.forEach((item) => {
+            totalQuantity += item.quantity;
+          })
+
+          //Update cart quantity in header cart button
+          document.querySelector(".js-cart-quantity")
+            .innerHTML = totalQuantity;
           });
         });
-
