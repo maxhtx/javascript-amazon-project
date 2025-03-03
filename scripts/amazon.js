@@ -1,4 +1,6 @@
+import { cart } from "../data/cart.js";
 
+//Initialize cart
 //Initialize productsHTML
 let productsHTML = "";
 
